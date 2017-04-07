@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  become: yes
+  roles:
+  - role: docker-io
+  - { role: syncthing-container, ext_syncthing_volume: "/var/lib/docker-extvols/syncthing-1", ext_syncthing_config_volume: "/var/lib/docker-extvols/syncthing-1-config", ext_syncthing_gui_port: 19899, ext_syncthing_sync_port: 22001 }
+  - { role: syncthing-container, ext_syncthing_volume: "/var/lib/docker-extvols/syncthing-2", ext_syncthing_config_volume: "/var/lib/docker-extvols/syncthing-2-config", ext_syncthing_gui_port: 19900, ext_syncthing_sync_port: 22002 }

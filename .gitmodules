@@ -1,0 +1,9 @@
+[submodule "roles/docker-io"]
+	path = roles/docker-io
+	url = https://github.com/gitinsky/ansible-role-docker-io.git
+[submodule "roles/syncthing-container"]
+	path = roles/syncthing-container
+	url = https://github.com/gitinsky/ansible-role-syncthing-container.git
+[submodule "roles/docker.ubuntu"]
+	path = roles/docker.ubuntu
+	url = https://github.com/gitinsky/docker.ubuntu.git
