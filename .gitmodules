@@ -7,3 +7,6 @@
 [submodule "roles/docker.ubuntu"]
 	path = roles/docker.ubuntu
 	url = https://github.com/gitinsky/docker.ubuntu.git
+[submodule "roles/firewalld"]
+	path = roles/firewalld
+	url = https://github.com/gitinsky/ansible-role-firewalld.git

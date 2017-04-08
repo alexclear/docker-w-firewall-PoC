@@ -9,6 +9,10 @@ Vagrant.configure(2) do |config|
       v.name = "localhost"
     end
   end
+  config.vm.network "forwarded_port", guest: 22002, host: 22002
+  config.vm.network "forwarded_port", guest: 22001, host: 22001
+  config.vm.network "forwarded_port", guest: 19899, host: 19899
+  config.vm.network "forwarded_port", guest: 19900, host: 19900
 
   config.vm.provision "shell",
     inline: "apt-get install -y python"
