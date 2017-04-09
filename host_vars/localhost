@@ -1,0 +1,5 @@
+firewalld:
+  open_ports:
+    - 2000/tcp
+    - 2001/tcp
+    - 2002/tcp
